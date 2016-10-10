@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    
+    <h:head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+    </h:head>
+    
+    <h:body>
+        <h1>Hello World! </h1>
+        <h4>
+            <h:outputText value="#{msg.hi}"/> Kemal Sami KARACA
+        </h4>
+        
+        <h:form>
+            <h:commandButton value="Turkish" 
+                             action="#{languageBean.switchLanguages('tr')}" />
+            <h:commandButton value="English" 
+                             action="#{languageBean.switchLanguages('en')}" />
+        </h:form>
+        
+    </h:body>
+    
+</html>
+
